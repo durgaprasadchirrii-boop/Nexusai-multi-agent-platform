@@ -1,0 +1,110 @@
+{"timestamp": 1792820713.877543, "service": "nexusai", "event": "http_request", "method": "GET", "route": "/", "status_code": 200, "duration_seconds": 0.003}
+{"timestamp": 1792820714.103491, "service": "nexusai", "event": "http_request", "method": "GET", "route": "/health", "status_code": 200, "duration_seconds": 0.0021}
+{"timestamp": 1792820714.11576, "service": "nexusai", "event": "http_request", "method": "POST", "route": "/api/analyze", "status_code": 422, "duration_seconds": 0.0026}
+{"timestamp": 1792820714.1251514, "service": "nexusai", "event": "workflow_finished", "run_id": "954c1945-62e6-426a-b824-57225bd7012b", "status": "completed", "verification_status": "passed", "task_count": 0, "revision_count": 0}
+{"timestamp": 1792820714.1268082, "service": "nexusai", "event": "http_request", "method": "POST", "route": "/api/analyze", "status_code": 200, "duration_seconds": 0.0033}
+{"timestamp": 1792820714.1361594, "service": "nexusai", "event": "http_request", "method": "POST", "route": "/api/approve", "status_code": 422, "duration_seconds": 0.0012}
+{"timestamp": 1792820714.1563349, "service": "nexusai", "event": "node_finished", "node": "test_node", "duration_seconds": 0.0001}
+{"timestamp": 1792820714.1624765, "service": "nexusai", "event": "node_finished", "node": "failing_test_node", "duration_seconds": 0.0015}
+{"timestamp": 1792820714.206802, "service": "nexusai", "event": "node_finished", "node": "orchestrator", "duration_seconds": 0.0043}
+{"timestamp": 1792820714.2102551, "service": "nexusai", "event": "node_finished", "node": "analyst", "duration_seconds": 0.0001}
+{"timestamp": 1792820714.2105343, "service": "nexusai", "event": "node_finished", "node": "analyst", "duration_seconds": 0.0001}
+{"timestamp": 1792820714.2131617, "service": "nexusai", "event": "node_finished", "node": "reporter", "duration_seconds": 0.0001}
+{"timestamp": 1792820714.2150428, "service": "nexusai", "event": "node_finished", "node": "critic", "duration_seconds": 0.0001}
+{"timestamp": 1792820714.2184186, "service": "nexusai", "event": "node_finished", "node": "finish", "duration_seconds": 0.0001}
+{"timestamp": 1792820714.2666113, "service": "nexusai", "event": "node_finished", "node": "orchestrator", "duration_seconds": 0.0001}
+{"timestamp": 1792820714.2692294, "service": "nexusai", "event": "node_finished", "node": "analyst", "duration_seconds": 0.0001}
+{"timestamp": 1792820714.271597, "service": "nexusai", "event": "node_finished", "node": "reporter", "duration_seconds": 0.0001}
+{"timestamp": 1792820714.2731674, "service": "nexusai", "event": "node_finished", "node": "critic", "duration_seconds": 0.0001}
+{"timestamp": 1792820714.2749517, "service": "nexusai", "event": "node_finished", "node": "revise_report", "duration_seconds": 0.0}
+{"timestamp": 1792820714.2773051, "service": "nexusai", "event": "node_finished", "node": "critic", "duration_seconds": 0.0001}
+{"timestamp": 1792820714.2810085, "service": "nexusai", "event": "node_finished", "node": "finish", "duration_seconds": 0.0001}
+{"timestamp": 1792820790.1325321, "service": "nexusai", "event": "http_request", "method": "GET", "route": "/", "status_code": 200, "duration_seconds": 0.0022}
+{"timestamp": 1792820790.1458347, "service": "nexusai", "event": "http_request", "method": "GET", "route": "/health", "status_code": 200, "duration_seconds": 0.0022}
+{"timestamp": 1792820790.1546528, "service": "nexusai", "event": "http_request", "method": "POST", "route": "/api/analyze", "status_code": 422, "duration_seconds": 0.0023}
+{"timestamp": 1792820790.165201, "service": "nexusai", "event": "workflow_finished", "run_id": "8771ebec-dd9d-4792-a2c0-5bdca83c6e5c", "status": "completed", "verification_status": "passed", "task_count": 0, "revision_count": 0}
+{"timestamp": 1792820790.1664975, "service": "nexusai", "event": "http_request", "method": "POST", "route": "/api/analyze", "status_code": 200, "duration_seconds": 0.0029}
+{"timestamp": 1792820790.1767576, "service": "nexusai", "event": "http_request", "method": "POST", "route": "/api/approve", "status_code": 422, "duration_seconds": 0.0015}
+{"timestamp": 1792820790.673677, "service": "nexusai", "event": "node_finished", "node": "test_node", "duration_seconds": 0.0001}
+{"timestamp": 1792820790.6775513, "service": "nexusai", "event": "node_finished", "node": "failing_test_node", "duration_seconds": 0.001}
+{"timestamp": 1792820790.744455, "service": "nexusai", "event": "node_finished", "node": "orchestrator", "duration_seconds": 0.0001}
+{"timestamp": 1792820790.7482054, "service": "nexusai", "event": "node_finished", "node": "analyst", "duration_seconds": 0.0001}
+{"timestamp": 1792820790.7487242, "service": "nexusai", "event": "node_finished", "node": "analyst", "duration_seconds": 0.0001}
+{"timestamp": 1792820790.7520576, "service": "nexusai", "event": "node_finished", "node": "reporter", "duration_seconds": 0.0001}
+{"timestamp": 1792820790.7542346, "service": "nexusai", "event": "node_finished", "node": "critic", "duration_seconds": 0.0001}
+{"timestamp": 1792820790.7594304, "service": "nexusai", "event": "node_finished", "node": "finish", "duration_seconds": 0.0001}
+{"timestamp": 1792820790.8090513, "service": "nexusai", "event": "node_finished", "node": "orchestrator", "duration_seconds": 0.0005}
+{"timestamp": 1792820790.8118849, "service": "nexusai", "event": "node_finished", "node": "analyst", "duration_seconds": 0.0001}
+{"timestamp": 1792820790.8152196, "service": "nexusai", "event": "node_finished", "node": "reporter", "duration_seconds": 0.0001}
+{"timestamp": 1792820790.818382, "service": "nexusai", "event": "node_finished", "node": "critic", "duration_seconds": 0.0001}
+{"timestamp": 1792820790.8207586, "service": "nexusai", "event": "node_finished", "node": "revise_report", "duration_seconds": 0.0001}
+{"timestamp": 1792820790.823013, "service": "nexusai", "event": "node_finished", "node": "critic", "duration_seconds": 0.0001}
+{"timestamp": 1792820790.8277519, "service": "nexusai", "event": "node_finished", "node": "finish", "duration_seconds": 0.0001}
+{"timestamp": 1792821041.2585068, "service": "nexusai", "event": "http_request", "method": "GET", "route": "/", "status_code": 200, "duration_seconds": 0.0022}
+{"timestamp": 1792821041.2704706, "service": "nexusai", "event": "http_request", "method": "GET", "route": "/health", "status_code": 200, "duration_seconds": 0.0038}
+{"timestamp": 1792821041.2793932, "service": "nexusai", "event": "http_request", "method": "POST", "route": "/api/analyze", "status_code": 422, "duration_seconds": 0.0017}
+{"timestamp": 1792821041.2899516, "service": "nexusai", "event": "workflow_finished", "run_id": "91c075cc-fa30-49b4-a998-ff6a74d2e127", "status": "completed", "verification_status": "passed", "task_count": 0, "revision_count": 0}
+{"timestamp": 1792821041.2912188, "service": "nexusai", "event": "http_request", "method": "POST", "route": "/api/analyze", "status_code": 200, "duration_seconds": 0.0029}
+{"timestamp": 1792821041.2996094, "service": "nexusai", "event": "http_request", "method": "POST", "route": "/api/approve", "status_code": 422, "duration_seconds": 0.0013}
+{"timestamp": 1792821041.4896219, "service": "nexusai", "event": "node_finished", "node": "test_node", "duration_seconds": 0.0001}
+{"timestamp": 1792821041.4931204, "service": "nexusai", "event": "node_finished", "node": "failing_test_node", "duration_seconds": 0.0008}
+{"timestamp": 1792821041.5231009, "service": "nexusai", "event": "node_finished", "node": "orchestrator", "duration_seconds": 0.0001}
+{"timestamp": 1792821041.5261374, "service": "nexusai", "event": "node_finished", "node": "analyst", "duration_seconds": 0.0001}
+{"timestamp": 1792821041.5263758, "service": "nexusai", "event": "node_finished", "node": "analyst", "duration_seconds": 0.0}
+{"timestamp": 1792821041.5286427, "service": "nexusai", "event": "node_finished", "node": "reporter", "duration_seconds": 0.0001}
+{"timestamp": 1792821041.531837, "service": "nexusai", "event": "node_finished", "node": "critic", "duration_seconds": 0.0003}
+{"timestamp": 1792821041.5362904, "service": "nexusai", "event": "node_finished", "node": "finish", "duration_seconds": 0.0001}
+{"timestamp": 1792821041.5890956, "service": "nexusai", "event": "node_finished", "node": "orchestrator", "duration_seconds": 0.0001}
+{"timestamp": 1792821041.5910037, "service": "nexusai", "event": "node_finished", "node": "analyst", "duration_seconds": 0.0}
+{"timestamp": 1792821041.592762, "service": "nexusai", "event": "node_finished", "node": "reporter", "duration_seconds": 0.0}
+{"timestamp": 1792821041.5947723, "service": "nexusai", "event": "node_finished", "node": "critic", "duration_seconds": 0.0001}
+{"timestamp": 1792821041.5975933, "service": "nexusai", "event": "node_finished", "node": "revise_report", "duration_seconds": 0.0001}
+{"timestamp": 1792821041.5998309, "service": "nexusai", "event": "node_finished", "node": "critic", "duration_seconds": 0.0001}
+{"timestamp": 1792821041.604306, "service": "nexusai", "event": "node_finished", "node": "finish", "duration_seconds": 0.0001}
+{"timestamp": 1792821434.0285952, "service": "nexusai", "event": "node_finished", "node": "orchestrator", "duration_seconds": 0.0001}
+{"timestamp": 1792821434.031317, "service": "nexusai", "event": "node_finished", "node": "analyst", "duration_seconds": 0.0001}
+{"timestamp": 1792821434.0317633, "service": "nexusai", "event": "node_finished", "node": "analyst", "duration_seconds": 0.0001}
+{"timestamp": 1792821434.0339396, "service": "nexusai", "event": "node_finished", "node": "reporter", "duration_seconds": 0.0}
+{"timestamp": 1792821434.0355964, "service": "nexusai", "event": "node_finished", "node": "critic", "duration_seconds": 0.0}
+{"timestamp": 1792821434.0388107, "service": "nexusai", "event": "node_finished", "node": "finish", "duration_seconds": 0.0001}
+{"timestamp": 1792821434.2573404, "service": "nexusai", "event": "node_finished", "node": "orchestrator", "duration_seconds": 0.0001}
+{"timestamp": 1792821434.2594883, "service": "nexusai", "event": "node_finished", "node": "analyst", "duration_seconds": 0.0}
+{"timestamp": 1792821434.2616878, "service": "nexusai", "event": "node_finished", "node": "reporter", "duration_seconds": 0.0001}
+{"timestamp": 1792821434.2698464, "service": "nexusai", "event": "node_finished", "node": "critic", "duration_seconds": 0.0001}
+{"timestamp": 1792821434.2721047, "service": "nexusai", "event": "node_finished", "node": "revise_report", "duration_seconds": 0.0}
+{"timestamp": 1792821434.2738404, "service": "nexusai", "event": "node_finished", "node": "critic", "duration_seconds": 0.0001}
+{"timestamp": 1792821434.2764573, "service": "nexusai", "event": "node_finished", "node": "finish", "duration_seconds": 0.0}
+{"timestamp": 1792821714.963186, "service": "nexusai", "event": "node_finished", "node": "orchestrator", "duration_seconds": 0.0001}
+{"timestamp": 1792821714.9659774, "service": "nexusai", "event": "node_finished", "node": "analyst", "duration_seconds": 0.0001}
+{"timestamp": 1792821714.9660938, "service": "nexusai", "event": "node_finished", "node": "analyst", "duration_seconds": 0.0001}
+{"timestamp": 1792821714.968312, "service": "nexusai", "event": "node_finished", "node": "reporter", "duration_seconds": 0.0001}
+{"timestamp": 1792821714.9701877, "service": "nexusai", "event": "node_finished", "node": "critic", "duration_seconds": 0.0001}
+{"timestamp": 1792821714.9739816, "service": "nexusai", "event": "node_finished", "node": "finish", "duration_seconds": 0.0002}
+{"timestamp": 1792821715.2016006, "service": "nexusai", "event": "node_finished", "node": "orchestrator", "duration_seconds": 0.0001}
+{"timestamp": 1792821715.2034283, "service": "nexusai", "event": "node_finished", "node": "analyst", "duration_seconds": 0.0}
+{"timestamp": 1792821715.2049565, "service": "nexusai", "event": "node_finished", "node": "reporter", "duration_seconds": 0.0}
+{"timestamp": 1792821715.2108037, "service": "nexusai", "event": "node_finished", "node": "critic", "duration_seconds": 0.0001}
+{"timestamp": 1792821715.213969, "service": "nexusai", "event": "node_finished", "node": "revise_report", "duration_seconds": 0.0001}
+{"timestamp": 1792821715.2166784, "service": "nexusai", "event": "node_finished", "node": "critic", "duration_seconds": 0.0001}
+{"timestamp": 1792821715.2206662, "service": "nexusai", "event": "node_finished", "node": "finish", "duration_seconds": 0.0001}
+{"timestamp": 1792821753.1257575, "service": "nexusai", "event": "http_request", "method": "GET", "route": "/", "status_code": 200, "duration_seconds": 0.0084}
+{"timestamp": 1792821753.1388948, "service": "nexusai", "event": "http_request", "method": "GET", "route": "/health", "status_code": 200, "duration_seconds": 0.002}
+{"timestamp": 1792821753.1491773, "service": "nexusai", "event": "http_request", "method": "POST", "route": "/api/analyze", "status_code": 422, "duration_seconds": 0.0018}
+{"timestamp": 1792821753.160211, "service": "nexusai", "event": "workflow_finished", "run_id": "3e013097-b526-4016-9adf-f1a40cf037cc", "status": "completed", "verification_status": "passed", "task_count": 0, "revision_count": 0}
+{"timestamp": 1792821753.1617517, "service": "nexusai", "event": "http_request", "method": "POST", "route": "/api/analyze", "status_code": 200, "duration_seconds": 0.0033}
+{"timestamp": 1792821753.1701865, "service": "nexusai", "event": "http_request", "method": "POST", "route": "/api/approve", "status_code": 422, "duration_seconds": 0.0013}
+{"timestamp": 1792821753.3846629, "service": "nexusai", "event": "node_finished", "node": "test_node", "duration_seconds": 0.0001}
+{"timestamp": 1792821753.3892639, "service": "nexusai", "event": "node_finished", "node": "failing_test_node", "duration_seconds": 0.0015}
+{"timestamp": 1792821753.415068, "service": "nexusai", "event": "node_finished", "node": "orchestrator", "duration_seconds": 0.0001}
+{"timestamp": 1792821753.4191535, "service": "nexusai", "event": "node_finished", "node": "analyst", "duration_seconds": 0.0001}
+{"timestamp": 1792821753.4193354, "service": "nexusai", "event": "node_finished", "node": "analyst", "duration_seconds": 0.0001}
+{"timestamp": 1792821753.4231067, "service": "nexusai", "event": "node_finished", "node": "reporter", "duration_seconds": 0.0001}
+{"timestamp": 1792821753.4255745, "service": "nexusai", "event": "node_finished", "node": "critic", "duration_seconds": 0.0001}
+{"timestamp": 1792821753.4290335, "service": "nexusai", "event": "node_finished", "node": "finish", "duration_seconds": 0.0}
+{"timestamp": 1792821753.4761596, "service": "nexusai", "event": "node_finished", "node": "orchestrator", "duration_seconds": 0.0001}
+{"timestamp": 1792821753.4784338, "service": "nexusai", "event": "node_finished", "node": "analyst", "duration_seconds": 0.0001}
+{"timestamp": 1792821753.48049, "service": "nexusai", "event": "node_finished", "node": "reporter", "duration_seconds": 0.0}
+{"timestamp": 1792821753.4821365, "service": "nexusai", "event": "node_finished", "node": "critic", "duration_seconds": 0.0001}
+{"timestamp": 1792821753.4840841, "service": "nexusai", "event": "node_finished", "node": "revise_report", "duration_seconds": 0.0001}
+{"timestamp": 1792821753.4862714, "service": "nexusai", "event": "node_finished", "node": "critic", "duration_seconds": 0.0001}
+{"timestamp": 1792821753.4901848, "service": "nexusai", "event": "node_finished", "node": "finish", "duration_seconds": 0.0001}

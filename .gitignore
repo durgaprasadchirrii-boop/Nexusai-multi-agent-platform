@@ -1,0 +1,10 @@
+
+.venv/
+__pycache__/
+.pytest_cache/
+.env
+data/uploads/*
+data/chroma/
+data/nexusai_checkpoints.db
+data/sales.db
+*.pyc

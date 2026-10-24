@@ -1,0 +1,81 @@
+
+import logging
+
+from pydantic import BaseModel, Field
+
+from app.llm import get_llm
+from app.config import get_settings
+
+logger = logging.getLogger(__name__)
+
+ALLOWED_TASKS = {
+    "business_analysis",
+    "risk_review",
+    "recommendations",
+    "writing",
+}
+
+
+class PlannedTask(BaseModel):
+    task_id: str = Field(description="Unique task identifier")
+    task_type: str = Field(
+        description="One of the supported task types"
+    )
+    description: str = Field(
+        description="Specific work this task must perform"
+    )
+
+
+class ExecutionPlan(BaseModel):
+    objective: str
+    tasks: list[PlannedTask]
+
+
+def create_plan(user_request: str) -> ExecutionPlan:
+    settings = get_settings()
+
+    planner = get_llm().with_structured_output(ExecutionPlan)
+
+    prompt = f"""
+You are the NexusAI Orchestrator.
+
+Plan the user's request as independent specialist tasks.
+
+Supported task types:
+- business_analysis: analyze a business problem.
+- risk_review: identify risks, uncertainty, and missing evidence.
+- recommendations: suggest actionable next steps.
+- writing: create or improve business communication or documents.
+
+Rules:
+- Select only task types relevant to the request.
+- Use 1 to {settings.max_parallel_tasks} tasks.
+- Use distinct task IDs.
+- Keep tasks focused and independently executable.
+- For general business analysis, include business_analysis.
+- For a writing-only request, use writing.
+- Do not perform the tasks yourself.
+- Do not invent facts or claim external research has occurred.
+
+USER REQUEST:
+{user_request}
+"""
+
+    plan = planner.invoke(prompt)
+
+    # Validate the model output again before scheduling any work.
+    if not 1 <= len(plan.tasks) <= settings.max_parallel_tasks:
+        raise ValueError("Planner returned an invalid number of tasks")
+
+    task_ids = [task.task_id for task in plan.tasks]
+    if len(task_ids) != len(set(task_ids)):
+        raise ValueError("Planner returned duplicate task IDs")
+
+    for task in plan.tasks:
+        if task.task_type not in ALLOWED_TASKS:
+            raise ValueError(
+                f"Unsupported task type: {task.task_type}"
+            )
+
+    logger.info("Created plan with %s tasks", len(plan.tasks))
+    return plan

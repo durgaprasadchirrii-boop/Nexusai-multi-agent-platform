@@ -1,0 +1,37 @@
+
+services:
+  nexusai:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: nexusai
+    restart: unless-stopped
+    env_file:
+      - .env
+    environment:
+      # Override these if your app/config.py uses different names.
+      OLLAMA_HOST: ${OLLAMA_HOST:-http://host.docker.internal:11434}
+      OLLAMA_MODEL: ${OLLAMA_MODEL:-qwen2.5:3b}
+      NEXUSAI_TRACE_CONSOLE: ${NEXUSAI_TRACE_CONSOLE:-false}
+    ports:
+      - "127.0.0.1:8000:8000"
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    volumes:
+      - nexusai_data:/app/data
+      - nexusai_evaluations:/app/evaluation_results
+    healthcheck:
+      test:
+        - CMD
+        - python
+        - -c
+        - "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/health', timeout=3)"
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 30s
+    init: true
+
+volumes:
+  nexusai_data:
+  nexusai_evaluations:

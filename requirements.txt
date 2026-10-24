@@ -1,0 +1,46 @@
+#v5
+
+opentelemetry-api
+opentelemetry-sdk
+opentelemetry-exporter-otlp
+prometheus-client
+
+
+#v4 
+langgraph-checkpoint-sqlite
+
+
+#v3
+
+langgraph
+langchain
+langchain-core
+langchain-ollama
+langchain-chroma
+langchain-community
+chromadb
+langchain-text-splitters
+pypdf
+fastapi
+uvicorn[standard]
+pydantic
+pydantic-settings
+python-dotenv
+python-multipart
+pytest
+httpx
+
+
+# v1,v2
+
+# langgraph
+# langchain-core
+# langchain-ollama
+# langchain
+# fastapi
+# uvicorn[standard]
+# pydantic
+# pydantic-settings
+# python-dotenv
+# pytest
+# httpx

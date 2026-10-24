@@ -1,0 +1,4 @@
+
+{"id":"sales-total-001","request":"Calculate total revenue using the sales database and explain the result.","expected_terms":["revenue","database"],"expected_task_types":["sales_analytics"],"require_citation":false}
+{"id":"business-risk-001","request":"Analyze business risks, identify uncertainty, and recommend next steps.","expected_terms":["risk","recommend"],"expected_task_types":["risk_review"],"require_citation":false}
+{"id":"document-policy-001","request":"Research the uploaded company policy and cite supporting passages.","expected_terms":["source"],"expected_task_types":["document_research"],"require_citation":true}
